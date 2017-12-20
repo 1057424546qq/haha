@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title></title>
+    <link href="m/bootstrap.css" rel="stylesheet">
+    <script src="m/jquery.js"></script>
+    <script src="m/bootstrap.js"></script>
+    <script src="m/flexible.js"></script>
+    <link rel="stylesheet" type="text/css" href=""/>
+    <script src=""></script>
+  </head>
+  <body>
+  	<div style="width: 500px;background: #ff00ff;height: 200px;position: fixed;left: 50%;top: 50%;margin-left: -250px;margin-top: -100px;"></div>
+  	
+  	<div style="height: 1000px;"></div>
+        <script type="text/javascript">
+        	var str = [1,2,3,2,3,1,32,23,2,2,2,1,2];
+        	console.log(str.sort()[str.length-1]);
+        	console.log(str.sort().splice(-1)[0]);
+        	console.log(Math.max({},str));
+        	
+        	function Person(name,age) {   
+					    this.name=name; this.age=age;   
+					}   
+					 /*定义一个学生类*/   
+					function Student(name,age,grade) {   
+					    Person.apply(this,arguments); this.grade=grade;   
+					}   
+					//创建一个学生类   
+					var student=new Student("qian",21,"一年级");
+					//测试   
+					console.log(student)
+					alert("name:"+student.name+"\n"+"age:"+student.age+"\n"+"grade:"+student.grade); 
+//      	var obj = {};
+//      	for(var i=0;i<str.length;i++){
+//      		if(obj){
+//      			obj[str.charAt(i)]++;
+//      		}else{
+//      			obj[str.charAt(i)] = 1;
+//      		}
+//      	}
+//      	var times = 0;
+//      	var val = '';
+//      	for(var i in obj){
+//      		if(obj[i]>times){
+//      			times = obj[i];
+//      			val = i;
+//      			console.log(times);
+//      			console.log(val)
+//      		}
+//      	}
+
+
+        	
+        	
+        </script>
+  </body>
+</html>
